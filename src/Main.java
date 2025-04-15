@@ -3,20 +3,31 @@ import java.util.*;
 
 public class Main{
     public static void main(String[] args){
-        //자바에서의 map: 자바스크립트에서의 객체와 비슷
-        // value값에 해당하는 자료형이 다양하게 들어올때는 Object로 타입 지정
-        // Generic: 파라미터에 어떤 자료형의 인자값이 전달되야 되는지 호출 시점에 지정하는 것
-        Map<String, Object> student1 = new HashMap<>();
-        student1.put("name", "David");
-        student1.put("age", 20);
-        student1.put("isFemal", false);
-        student1.put("age", 21);
-        student1.remove("isfemal"); // student1.remove("isfemal");
+        int[] scores = {90, 80, 70};
+        String[] names = {"철수", "영희", "민수"};
 
-        System.out.println(student1);
-        System.out.println(student1.get("name"));
+        names[0] = "상도";
+        System.out.println(names[0]);  // 철수
+        System.out.println(scores.length);  // 3
     }
 }
+
+//public class Main{
+//    public static void main(String[] args){
+//        //자바에서의 map: 자바스크립트에서의 객체와 비슷
+//        // value값에 해당하는 자료형이 다양하게 들어올때는 Object로 타입 지정
+//        // Generic: 파라미터에 어떤 자료형의 인자값이 전달되야 되는지 호출 시점에 지정하는 것
+//        Map<String, Object> student1 = new HashMap<>();
+//        student1.put("name", "David");
+//        student1.put("age", 20);
+//        student1.put("isFemal", false);
+//        student1.put("age", 21);
+//        student1.remove("isfemal"); // student1.remove("isfemal");
+//
+//        System.out.println(student1);
+//        System.out.println(student1.get("name"));
+//    }
+//}
 
 //public class Main{
 //    public static void main(String[] args){
